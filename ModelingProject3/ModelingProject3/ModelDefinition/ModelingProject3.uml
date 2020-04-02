@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f925ecdf-654d-4329-abd7-e8c7f28f01a1"
+  name="ModelingProject3" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="23555116-ae7b-4140-bf5d-f2784f640d32"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2da27266-6456-4482-ba19-b9c2bc22393e">
+            <useCaseMoniker
+              Id="c53e554c-46f8-4f80-bd93-1a21200b01d1"
+              LastKnownName="Управление серверами"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="32aa6173-2a3b-4de4-ad66-c6ead4b5d279"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="e1ec3ee0-62d3-4fe0-ba6f-a3f6c016bb7d">
+            <useCaseMoniker
+              Id="4517be18-cea0-4afd-946c-c6a3956f7a23"
+              LastKnownName="Регистрация"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+          <dependency
+            Id="6f6f56d0-148b-4f71-80db-0aa130ba092b">
+            <useCaseMoniker
+              Id="c422fc64-9aab-44ca-aeb9-a53ef6c6d441"
+              LastKnownName="Выбор действия"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="aecfd6c1-e53d-4257-914e-634e5bee9b9c"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="850a5890-5370-453d-a84b-018056b06049"
+              LastKnownName="Moderator"
+              LastKnownLocation="ModelingProject3.uml" />
+          </generalization>
+          <generalization
+            Id="bb45330c-f57d-4a72-a78e-56cf2e47b80a"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="23555116-ae7b-4140-bf5d-f2784f640d32"
+              LastKnownName="Admin"
+              LastKnownLocation="ModelingProject3.uml" />
+          </generalization>
+          <generalization
+            Id="69214653-5c94-4e81-b778-1f225949b319"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="55fd87b7-6342-42f1-bdcf-7c29dfeb4de1"
+              LastKnownName="Viewer"
+              LastKnownLocation="ModelingProject3.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="55fd87b7-6342-42f1-bdcf-7c29dfeb4de1"
+        name="Viewer"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c7ddfb1a-c046-433e-bf66-1195c6f82ff6">
+            <useCaseMoniker
+              Id="ef7ba08e-9213-4ea9-83be-069b7d151389"
+              LastKnownName="Просмотр серверов"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c53e554c-46f8-4f80-bd93-1a21200b01d1"
+        name="Управление серверами"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="ec1b8a25-1dd3-4e7c-81aa-922a25016c6b">
+            <useCaseMoniker
+              Id="a0332f9f-dd92-44ca-9c61-6ed5ccbb0b76"
+              LastKnownName="Добавление сервера"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="5f0cfdec-e1e4-4e44-987d-fe620cedb5d4">
+            <useCaseMoniker
+              Id="d37bac9c-93ad-4f02-8f7b-d29674674ae2"
+              LastKnownName="Удаление сервера"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="4d0f654a-c15c-407f-8c2c-b3bc711ec712">
+            <useCaseMoniker
+              Id="099f6178-c079-466b-8d50-51a2e8f8fc0f"
+              LastKnownName="Добавление сервера в ТОП"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a0332f9f-dd92-44ca-9c61-6ed5ccbb0b76"
+        name="Добавление сервера"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d37bac9c-93ad-4f02-8f7b-d29674674ae2"
+        name="Удаление сервера"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="099f6178-c079-466b-8d50-51a2e8f8fc0f"
+        name="Добавление сервера в ТОП"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3eea2416-d50f-4cd8-b3f5-560df522121d"
+        name="Управление чатом"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4de1b533-dac5-42c8-9855-023013b8cf30">
+            <useCaseMoniker
+              Id="505b044d-73f0-4a77-a844-7903bf8df0d8"
+              LastKnownName="Блокировка нарушителей"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="7f5153f3-7095-48a8-ab94-a7f2af430150">
+            <useCaseMoniker
+              Id="687ca678-6214-402c-a38b-0c5e784bcffa"
+              LastKnownName="Выдача предупреждений"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="850a5890-5370-453d-a84b-018056b06049"
+        name="Moderator"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="1ffa803c-1902-4732-b0ae-54c56bc6a01b">
+            <useCaseMoniker
+              Id="3eea2416-d50f-4cd8-b3f5-560df522121d"
+              LastKnownName="Управление чатом"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="551901ae-124c-494b-bea9-5696a4c02d26"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="23555116-ae7b-4140-bf5d-f2784f640d32"
+              LastKnownName="Admin"
+              LastKnownLocation="ModelingProject3.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="505b044d-73f0-4a77-a844-7903bf8df0d8"
+        name="Блокировка нарушителей"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="687ca678-6214-402c-a38b-0c5e784bcffa"
+        name="Выдача предупреждений"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ef7ba08e-9213-4ea9-83be-069b7d151389"
+        name="Просмотр серверов"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="647296a8-8aa4-4d85-aa47-82120889a238">
+            <useCaseMoniker
+              Id="a882a24d-b55f-470f-89df-921c0519f45a"
+              LastKnownName="Просмотр информации по конкретному серверу"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a882a24d-b55f-470f-89df-921c0519f45a"
+        name="Просмотр информации по конкретному серверу"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c422fc64-9aab-44ca-aeb9-a53ef6c6d441"
+        name="Выбор действия"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b39ddc85-3efe-4ea3-832f-14e1d05d2a18">
+            <useCaseMoniker
+              Id="ef7ba08e-9213-4ea9-83be-069b7d151389"
+              LastKnownName="Просмотр серверов"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="6da68d81-e7ed-40dd-8093-b25cea75d1af">
+            <useCaseMoniker
+              Id="2990ada8-8e08-4c51-a47c-ea791edb0845"
+              LastKnownName="Вход в чат"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="dca803ed-c70a-480b-94c0-a75bae9b92b6">
+            <useCaseMoniker
+              Id="577997f0-7d45-4df9-97c4-2ac742da4644"
+              LastKnownName="Покупка рекламы сервера"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f0aa2b9-eb90-4561-bdc4-fd142650e682"
+        name="Выбор сервера"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2990ada8-8e08-4c51-a47c-ea791edb0845"
+        name="Вход в чат"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5deb31fe-09a6-4399-b71d-d86ac2f4e506">
+            <useCaseMoniker
+              Id="0a5f335b-08c4-4c2b-8bdf-7ffbe1ae47f9"
+              LastKnownName="Выбрать приватный чат"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+          <extend
+            Id="6bd01648-df4f-4112-84e6-737f41d7bf15">
+            <useCaseMoniker
+              Id="9cc56e70-7e49-456d-bf16-eeaefc2602a3"
+              LastKnownName="Выбрать общий чат"
+              LastKnownLocation="ModelingProject3.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0a5f335b-08c4-4c2b-8bdf-7ffbe1ae47f9"
+        name="Выбрать приватный чат"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9cc56e70-7e49-456d-bf16-eeaefc2602a3"
+        name="Выбрать общий чат"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="577997f0-7d45-4df9-97c4-2ac742da4644"
+        name="Покупка рекламы сервера"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4517be18-cea0-4afd-946c-c6a3956f7a23"
+        name="Регистрация"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42978a3d-3442-492e-b0dc-adbb69404f37"
+        name="Авторизация"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="9956209b-6c1a-45d9-9d8a-85b102c02c08">
+            <actorMoniker
+              Id="23555116-ae7b-4140-bf5d-f2784f640d32"
+              LastKnownName="Admin"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+          <dependency
+            Id="3866deab-e32e-4741-ac6d-2b00806dc53d">
+            <actorMoniker
+              Id="850a5890-5370-453d-a84b-018056b06049"
+              LastKnownName="Moderator"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+          <dependency
+            Id="6e8c6131-cc14-4772-aeb1-0ac9a57d4d53">
+            <actorMoniker
+              Id="32aa6173-2a3b-4de4-ad66-c6ead4b5d279"
+              LastKnownName="User"
+              LastKnownLocation="ModelingProject3.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="da2dfa3a-f999-4c2d-9fe8-180680087672"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2643be63-45ac-43c8-8fd9-7bbb04d6fa82"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Servera"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b4560a73-f2e5-45d8-97b1-30110b48f797"
+              LastKnownName="Projects"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e97b96d9-a2a4-449e-8f3a-6b127814d848"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="103c9220-4f33-452e-85f6-8d9d912fe356"
+                  name="Servera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1519522b-8d38-4693-af74-05e5bafdc211"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="01dd1b3f-9f4c-4c32-9d07-0eff77800364"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="446fc495-a29a-4229-8437-245f182774da"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Messages"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c87bd073-2a09-498e-9bb1-dbc18cbb2634"
+              LastKnownName="Messages"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b5887a7-741c-4f9a-a20a-bacb1d2981e1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f62bb92-07cf-4a4b-8391-e8c0de0aaf5a"
+                  name="Messages"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="abe854ce-e625-4572-ab39-20d09776356a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9308206-1397-4e69-8c55-b0e5715c06b1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0e9da7b9-6b5f-4a6b-961b-435e04ef39fb"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Privat Message"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ee44619f-9c9d-4819-866d-5fa39eefa0ec"
+              LastKnownName="Privat Message"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="749479f3-b902-4589-bbf3-f47666225946"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1252b38-19f6-4504-9123-f2e4f5b485f8"
+                  name="Privat Message"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="49a814f8-0bff-4b44-9402-8265d6859127"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="acfa9fca-408d-4b07-83e4-71d340b94e9c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f791240b-3999-4099-8cae-33a2b3567a91"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="General Message"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4c3ef5ab-41e3-431f-a7d3-945e103a5958"
+              LastKnownName="General Message"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb78ba85-b171-4571-a64c-1d63e44e7b29"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7e07f3f-f529-467c-932e-60bfb8b3a444"
+                  name="General Message"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c99b2970-6ae4-47c2-9334-2f8d8e95e081"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="faaa0f99-9218-44a6-8511-151360f7add7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4ba26bed-c0e8-4d77-89b8-2200ec16e780"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Advertising"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="06d0e54c-88fc-492c-a97e-cbb5bcf8db8a"
+              LastKnownName="Advertising"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18ab4b82-b9e8-4e8f-a5d9-deb82f78e52a"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d5e6699-efe8-4efc-85f3-31a86c6636a9"
+                  name="Advertising"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6051a237-400c-4e92-8cce-13b8cdf2f251"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a1e705f5-6ec8-4b87-b9b6-7e72e3cd41b0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d1f2b31d-1855-4401-a345-dccc75c826e6"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="038f354c-1ba6-481b-afda-c570e09816e9"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fc6156d5-6202-4b63-8a82-f51e1d22bf58"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="369c6734-6a51-4f2f-9217-bee5706fae50"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5968f7fb-53b7-43f6-859d-959f38e288aa"
+        name="Moderator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b4560a73-f2e5-45d8-97b1-30110b48f797"
+        name="Projects"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1fe752ce-95a5-4475-a3d3-a561ccacde3d"
+            isDerived="false"
+            sourceEndRoleName="Servera"
+            targetEndRoleName="Info"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cfe170b0-1ada-4c32-b756-8c6eda9f89ea"
+              LastKnownName="Info"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="824f4137-f433-4048-970a-742628840ff6"
+                  name="Servera"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a258692-f308-44f8-9162-6d717b239ee0"
+                  name="Info"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1796c887-684f-4b63-ac68-ea9b72ef40ad"
+            name="Project_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7335b911-adc7-4b20-b77c-55b10c8fc4fe"
+            name="ID_Project"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d7bb2462-cc01-4dc2-8f78-76bc462b03e4"
+            name="Project_Link"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2371f45c-f59e-4192-8752-9a9fb3fc640c"
+            name="Project_Info"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c87bd073-2a09-498e-9bb1-dbc18cbb2634"
+        name="Messages"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="30d38f30-b6df-48fd-9bb4-78089c4507bb"
+            isDerived="false"
+            sourceEndRoleName="Messages"
+            targetEndRoleName="Privat"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ee44619f-9c9d-4819-866d-5fa39eefa0ec"
+              LastKnownName="Privat Message"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85ed1604-312c-4b7d-b15e-b66d27ec95cd"
+                  name="Messages"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aee2a574-0885-435c-9f20-e96ba00f79f7"
+                  name="Privat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a154fc01-5eab-44f4-98bb-862bab88d1cb"
+            isDerived="false"
+            sourceEndRoleName="Messages"
+            targetEndRoleName="General"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4c3ef5ab-41e3-431f-a7d3-945e103a5958"
+              LastKnownName="General Message"
+              LastKnownLocation="ModelingProject3.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1913b36b-7873-46ae-8f36-11bc6545f9af"
+                  name="Messages"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31509ddb-a821-41bd-874f-ae0f5f4842cf"
+                  name="General"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cfe170b0-1ada-4c32-b756-8c6eda9f89ea"
+        name="Info"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee44619f-9c9d-4819-866d-5fa39eefa0ec"
+        name="Privat Message"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="326c142a-af08-4b6b-8606-e383e0a75e38"
+            name="Mess_P"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2b4c9f30-2003-444a-8db4-d1180549de28"
+            name="User_P_Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="864f1f94-7fcb-4264-8747-dede3fb0c5f0"
+            name="ID_P_Mess"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4c3ef5ab-41e3-431f-a7d3-945e103a5958"
+        name="General Message"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="17b42210-136f-47ec-b938-12030a3537e3"
+            name="Mess_G"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="207787ae-d926-4298-ae6d-3cb9215c8873"
+            name="User_G_Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cd2bfd1a-362c-40a0-a708-19cf28baa177"
+            name="ID_G_Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="06d0e54c-88fc-492c-a97e-cbb5bcf8db8a"
+        name="Advertising"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1e33a8f7-bf19-4a4a-a17b-1669ef4068c5"
+            name="Name_AD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="219fc0ec-e11d-4fb0-8c4c-adb101e59074"
+            name="Link_AD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fed3734c-dd8b-48a5-919f-c3be25cd8a80"
+            name="Info_AD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7715dbb2-7855-49bd-895d-ea17081af728"
+            name="ID_AD"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

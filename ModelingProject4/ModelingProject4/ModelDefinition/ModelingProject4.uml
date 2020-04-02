@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="da49b2dc-473b-4ef6-9ff5-e3b7bd9d5350"
+  name="ModelingProject4" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3f228ecf-3ef0-4410-924b-77c826371df6"
+        name="EventEmmiter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="844dd454-22d3-4e16-a118-49ee766666e9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bf5cc132-8b1c-4951-852c-3e6907022745"
+              LastKnownName="KingsHand"
+              LastKnownLocation="ModelingProject4.uml" />
+          </generalization>
+          <generalization
+            Id="b06b8781-264c-42ba-be90-4d9e79f01331"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bcae9fc4-689c-4245-938b-9c3b38b1adf0"
+              LastKnownName="Scout"
+              LastKnownLocation="ModelingProject4.uml" />
+          </generalization>
+          <generalization
+            Id="7bd3f32b-1144-4664-9968-91adee4c2098"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b561c82e-d104-4ff7-a606-d2205128ebab"
+              LastKnownName="LordBaelish"
+              LastKnownLocation="ModelingProject4.uml" />
+          </generalization>
+          <generalization
+            Id="b060de99-896d-4fa8-998a-04a6f518a833"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1bf13ef5-f5fe-4667-97dc-083dba01661b"
+              LastKnownName="LordVarys"
+              LastKnownLocation="ModelingProject4.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bf5cc132-8b1c-4951-852c-3e6907022745"
+        name="KingsHand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="39251b18-18c3-42b1-bb36-ea402a3fd531">
+            <interfaceMoniker
+              Id="e497ef68-28e0-4365-a2a5-64936ae01e63"
+              LastKnownName="EventObserver"
+              LastKnownLocation="ModelingProject4.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b561c82e-d104-4ff7-a606-d2205128ebab"
+        name="LordBaelish"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1bf13ef5-f5fe-4667-97dc-083dba01661b"
+        name="LordVarys"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e497ef68-28e0-4365-a2a5-64936ae01e63"
+        name="EventObserver"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bcae9fc4-689c-4245-938b-9c3b38b1adf0"
+        name="Scout"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="93795f38-74fa-4184-a4b8-fb1a767fcb9b"
+        name="KingJoffrey"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2c3debfd-a51a-4030-abe9-a447111b489a">
+            <interfaceMoniker
+              Id="e497ef68-28e0-4365-a2a5-64936ae01e63"
+              LastKnownName="EventObserver"
+              LastKnownLocation="ModelingProject4.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

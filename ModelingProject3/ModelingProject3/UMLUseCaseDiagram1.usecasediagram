@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="378445c2-15a1-447f-b992-024e150105ec" name="UMLUseCaseDiagram1" linkedPackageId="46fdffdb-34c3-4c51-9b12-32b9b0c922d7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ab55ddd9-8e2a-4c92-9434-b723fe8ffee7">
+      <profileInstance Id="26ef12b3-58ca-4d7f-acc4-ce81a9a7b403" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3088a3b5-31cc-4b9e-9473-52a442e9bd4a">
+      <profileInstance Id="09402e7f-6301-4c25-b7d3-82b65032bef9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d5595f84-4d5e-489e-bb15-178863609e53" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23555116-ae7b-4140-bf5d-f2784f640d32" />
+        <suppliersInternal>
+          <dependency Id="264788e6-cb74-45a4-9e68-290c67f80138">
+            <useCaseMoniker Id="989d4487-9a4c-4f36-99fb-234e3c35b11e" LastKnownName="Управление серверами" />
+            <elementDefinition Id="2da27266-6456-4482-ba19-b9c2bc22393e" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8e977044-00d5-45ad-8f93-412cd0961ce4" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32aa6173-2a3b-4de4-ad66-c6ead4b5d279" />
+        <suppliersInternal>
+          <dependency Id="b5bbf0c6-027f-4daa-94db-240bb796fec2">
+            <useCaseMoniker Id="d37e8af2-5f12-46c2-a3ca-882ff814416c" LastKnownName="Выбор действия" />
+            <elementDefinition Id="6f6f56d0-148b-4f71-80db-0aa130ba092b" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="498130f1-db92-4f2f-b95e-ae8f3e4e1518" isSubstitutable="false">
+            <actorMoniker Id="c3a91960-452e-4492-9f9d-cfecfe868013" LastKnownName="Moderator" />
+            <elementDefinition Id="aecfd6c1-e53d-4257-914e-634e5bee9b9c" />
+          </generalization>
+          <generalization Id="fe2ebae2-e5a2-4417-8154-674242fea6ce" isSubstitutable="false">
+            <actorMoniker Id="d5595f84-4d5e-489e-bb15-178863609e53" LastKnownName="Admin" />
+            <elementDefinition Id="bb45330c-f57d-4a72-a78e-56cf2e47b80a" />
+          </generalization>
+          <generalization Id="5c90e699-4bd6-4cf4-abbe-165897ad3d23" isSubstitutable="false">
+            <actorMoniker Id="c970292d-f0d1-47da-8b03-887253097278" LastKnownName="Viewer" />
+            <elementDefinition Id="69214653-5c94-4e81-b778-1f225949b319" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c970292d-f0d1-47da-8b03-887253097278" name="Viewer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55fd87b7-6342-42f1-bdcf-7c29dfeb4de1" />
+        <suppliersInternal>
+          <dependency Id="e769ae0b-deff-48d9-8364-a8c3870c35a6">
+            <useCaseMoniker Id="2d0296df-ce36-4279-971b-5e5a20b3109a" LastKnownName="Просмотр серверов" />
+            <elementDefinition Id="c7ddfb1a-c046-433e-bf66-1195c6f82ff6" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="989d4487-9a4c-4f36-99fb-234e3c35b11e" name="Управление серверами" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c53e554c-46f8-4f80-bd93-1a21200b01d1" />
+        <extendedCases>
+          <extend Id="f11b449e-dd23-44fc-a398-9ebc7ab58685">
+            <useCaseMoniker Id="d93820ed-9b5e-4df7-bb1e-a2e56ec23704" LastKnownName="Добавление сервера" />
+            <elementDefinition Id="ec1b8a25-1dd3-4e7c-81aa-922a25016c6b" />
+          </extend>
+          <extend Id="66fa512a-8086-4c6d-b1a3-b7b9e90de92d">
+            <useCaseMoniker Id="1c58807e-01fd-4f0b-bce0-9de46373df8c" LastKnownName="Удаление сервера" />
+            <elementDefinition Id="5f0cfdec-e1e4-4e44-987d-fe620cedb5d4" />
+          </extend>
+          <extend Id="0244e410-f22c-4c6d-9353-27b92e025857">
+            <useCaseMoniker Id="860c4aeb-76d6-4cdd-86aa-8d23054541af" LastKnownName="Добавление сервера в ТОП" />
+            <elementDefinition Id="4d0f654a-c15c-407f-8c2c-b3bc711ec712" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d93820ed-9b5e-4df7-bb1e-a2e56ec23704" name="Добавление сервера" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a0332f9f-dd92-44ca-9c61-6ed5ccbb0b76" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c58807e-01fd-4f0b-bce0-9de46373df8c" name="Удаление сервера" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d37bac9c-93ad-4f02-8f7b-d29674674ae2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="860c4aeb-76d6-4cdd-86aa-8d23054541af" name="Добавление сервера в ТОП" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="099f6178-c079-466b-8d50-51a2e8f8fc0f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8fdaa2ae-b861-482b-9562-b7cfa7f46279" name="Управление чатом" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3eea2416-d50f-4cd8-b3f5-560df522121d" />
+        <extendedCases>
+          <extend Id="40dd3bcb-cf39-42dd-bfee-f2f180bcd92d">
+            <useCaseMoniker Id="6fbb2589-7bb8-4c51-81b1-2ed94414d82c" LastKnownName="Блокировка нарушителей" />
+            <elementDefinition Id="4de1b533-dac5-42c8-9855-023013b8cf30" />
+          </extend>
+          <extend Id="98e1a748-2e0a-4992-bea9-f542e58c5c10">
+            <useCaseMoniker Id="3ce291d5-f94e-4800-ac79-5ea84af942cd" LastKnownName="Выдача предупреждений" />
+            <elementDefinition Id="7f5153f3-7095-48a8-ab94-a7f2af430150" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c3a91960-452e-4492-9f9d-cfecfe868013" name="Moderator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="850a5890-5370-453d-a84b-018056b06049" />
+        <suppliersInternal>
+          <dependency Id="01a7a10c-e8c3-4e99-be4e-dbdca2ce9305">
+            <useCaseMoniker Id="8fdaa2ae-b861-482b-9562-b7cfa7f46279" LastKnownName="Управление чатом" />
+            <elementDefinition Id="1ffa803c-1902-4732-b0ae-54c56bc6a01b" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="11f034f3-25e3-482c-8dd0-b19409c4dc7f" isSubstitutable="false">
+            <actorMoniker Id="d5595f84-4d5e-489e-bb15-178863609e53" LastKnownName="Admin" />
+            <elementDefinition Id="551901ae-124c-494b-bea9-5696a4c02d26" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6fbb2589-7bb8-4c51-81b1-2ed94414d82c" name="Блокировка нарушителей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="505b044d-73f0-4a77-a844-7903bf8df0d8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3ce291d5-f94e-4800-ac79-5ea84af942cd" name="Выдача предупреждений" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="687ca678-6214-402c-a38b-0c5e784bcffa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2d0296df-ce36-4279-971b-5e5a20b3109a" name="Просмотр серверов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef7ba08e-9213-4ea9-83be-069b7d151389" />
+        <extendedCases>
+          <extend Id="212ebc05-f1ed-420f-a024-02e470c24366">
+            <useCaseMoniker Id="7e037455-a461-4cc2-9f3d-18224ab6b416" LastKnownName="Просмотр информации по конкретному серверу" />
+            <elementDefinition Id="647296a8-8aa4-4d85-aa47-82120889a238" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e037455-a461-4cc2-9f3d-18224ab6b416" name="Просмотр информации по конкретному серверу" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a882a24d-b55f-470f-89df-921c0519f45a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d37e8af2-5f12-46c2-a3ca-882ff814416c" name="Выбор действия" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c422fc64-9aab-44ca-aeb9-a53ef6c6d441" />
+        <extendedCases>
+          <extend Id="da5d6ade-ee00-466a-8328-6b3d749ab488">
+            <useCaseMoniker Id="2d0296df-ce36-4279-971b-5e5a20b3109a" LastKnownName="Просмотр серверов" />
+            <elementDefinition Id="b39ddc85-3efe-4ea3-832f-14e1d05d2a18" />
+          </extend>
+          <extend Id="b480b370-af67-43c3-b75f-332f40ea5f7d">
+            <useCaseMoniker Id="4684af70-4f6b-487d-aaa3-049e5ef7ac7b" LastKnownName="Вход в чат" />
+            <elementDefinition Id="6da68d81-e7ed-40dd-8093-b25cea75d1af" />
+          </extend>
+          <extend Id="068fb666-f7fb-44e2-bd27-3c07bfa997d3">
+            <useCaseMoniker Id="c7980f1a-be26-417e-96e1-491edf888565" LastKnownName="Покупка рекламы сервера" />
+            <elementDefinition Id="dca803ed-c70a-480b-94c0-a75bae9b92b6" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4684af70-4f6b-487d-aaa3-049e5ef7ac7b" name="Вход в чат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2990ada8-8e08-4c51-a47c-ea791edb0845" />
+        <extendedCases>
+          <extend Id="ce79cb87-2748-4eaa-b211-4313160a0bae">
+            <useCaseMoniker Id="c5a67fc1-e40c-40e7-a641-9aaf70bcc641" LastKnownName="Выбрать приватный чат" />
+            <elementDefinition Id="5deb31fe-09a6-4399-b71d-d86ac2f4e506" />
+          </extend>
+          <extend Id="d68a384a-6ae7-4781-a47a-8f6a520782b3">
+            <useCaseMoniker Id="b012fc56-7a36-4b40-acf4-f17c72f59d91" LastKnownName="Выбрать общий чат" />
+            <elementDefinition Id="6bd01648-df4f-4112-84e6-737f41d7bf15" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c5a67fc1-e40c-40e7-a641-9aaf70bcc641" name="Выбрать приватный чат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0a5f335b-08c4-4c2b-8bdf-7ffbe1ae47f9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b012fc56-7a36-4b40-acf4-f17c72f59d91" name="Выбрать общий чат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9cc56e70-7e49-456d-bf16-eeaefc2602a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7980f1a-be26-417e-96e1-491edf888565" name="Покупка рекламы сервера" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="577997f0-7d45-4df9-97c4-2ac742da4644" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d4bf43ca-5950-450d-b36a-4a6116bed26d" name="Авторизация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42978a3d-3442-492e-b0dc-adbb69404f37" />
+        <suppliersInternal>
+          <dependency Id="f2d75a32-1f9b-476f-a161-46787e31ba29">
+            <actorMoniker Id="d5595f84-4d5e-489e-bb15-178863609e53" LastKnownName="Admin" />
+            <elementDefinition Id="9956209b-6c1a-45d9-9d8a-85b102c02c08" />
+          </dependency>
+          <dependency Id="5b76d439-c7d4-450e-9136-fd2bd8ef01c6">
+            <actorMoniker Id="c3a91960-452e-4492-9f9d-cfecfe868013" LastKnownName="Moderator" />
+            <elementDefinition Id="3866deab-e32e-4741-ac6d-2b00806dc53d" />
+          </dependency>
+          <dependency Id="c9267065-987b-4fd4-acef-90db99129c8b">
+            <actorMoniker Id="8e977044-00d5-45ad-8f93-412cd0961ce4" LastKnownName="User" />
+            <elementDefinition Id="6e8c6131-cc14-4772-aeb1-0ac9a57d4d53" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="46fdffdb-34c3-4c51-9b12-32b9b0c922d7" name="ModelingProject3">
+    <elementDefinition Id="f925ecdf-654d-4329-abd7-e8c7f28f01a1" />
+  </package>
+</useCaseModelRoot>
